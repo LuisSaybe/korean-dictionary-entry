@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  main:
+    image: luissaybe/korean-dictionary-entry
+    command: ["python3", "/root/index.py"]
+    volumes:
+      - ./index.py:/root/index.py
